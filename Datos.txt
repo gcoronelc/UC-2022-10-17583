@@ -1,2 +1,2 @@
-Delegado: 
-Subdelegado: 
+Delegado: Falta
+Subdelegado: Falta
