@@ -1,0 +1,82 @@
+﻿PROBLEMA 2 - Datos de Prueba
+===================================================
+
+
+FORMULAS
+---------------------------------------------------
+1) total = precio * cantidad
+2) importe = total / 1.18
+3) impuesto = total - importe
+
+
+
+Datos de entrada
+-------------------------------------
+Producto: Camisa
+Precio: 120.00
+Cantidad: 4
+
+Reporte
+-------------------------------------
+Importe: 
+Impuesto: 
+Total:
+
+
+
+GIOVANNI ELVER MUNGUIA SALAZAR13:37
+Datos de entrada
+-------------------------------------
+Precio: s/5.50
+Cantidad: 4 
+
+Reporte (Revisar)
+-------------------------------------
+Importe: s/22      (1) Precio * Cantidad
+Impuesto: s/3.96   (2) Importe * 0.18
+Total: s/25.96     (3) Importe + Impuesto
+
+
+
+
+
+MATHIW JORDAN SEGURA FIGUEROA13:38
+Datos de entrada
+-------------------------------------
+Precio: 17
+Cantidad: 48
+
+Reporte
+-------------------------------------
+Importe: 816
+Impuesto: 146.88
+Total: 962.88
+
+
+ENOLA AMPARO CHAVEZ HUANQUI13:39
+Datos de entrada
+-------------------------------------
+Precio: vestido 90
+Cantidad: 2
+
+Reporte
+-------------------------------------
+Importe: 180
+Impuesto: 18%
+Total: 212.40
+
+
+
+ELSER GIAMPIERRE GUERRERO GARCIA13:39
+Datos de entrada
+-------------------------------------
+Precio: s/ 250.00
+Cantidad: 15
+
+Reporte
+-------------------------------------
+Importe: s/ 3750
+Impuesto: s/585
+Total: s/4335
+
+
