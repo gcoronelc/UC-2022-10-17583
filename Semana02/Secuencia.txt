@@ -1,7 +1,18 @@
-PASOS
--------------------------------------------
-1.- Analisis de la caja negra.
-2.- Algoritmo y/o formulas
+PASOS PARA RESOLVER UN PROBLEMA
+=======================================================================
+
+1.- Análisis de la caja negra
+    Sirve para identificar los datos de entrada y los datos de salida.
+
+2.- Algoritmo y/o fórmulas
+
 3.- Datos de prueba
+    Ejemplo, calcular el factorial de un numero.
+    Caso 1: Entrada:  3   ==>  Salida: 6
+    Caso 2: Entrada:  0   ==>  Salida: 
+    Caso 3: Entrada: -1   ==>  Salida: 
+
 4.- Programa
+
 5.- Ejecución y pruebas
+
