@@ -15,4 +15,100 @@ División:
 Residuo: 
 
 
+MATHIW JORDAN SEGURA FIGUEROA12:09
+PROBLEMA 1 - Datos de Prueba
+===================================================
+
+Datos de entrada
+-------------------------------------
+Número 1: 250
+Número 2: 50
+
+Reporte
+-------------------------------------
+Suma: 300
+Resta: 200
+Producto: 12500
+División: 5
+Residuo: 0
+
+
+ELSER GIAMPIERRE GUERRERO GARCIA12:22
+PROBLEMA 1 - Datos de Prueba
+===================================================
+
+Datos de entrada
+-------------------------------------
+Número 1: 76
+Número 2: 3
+
+Reporte
+-------------------------------------
+Suma: 79
+Resta: 73
+Producto: 228
+División: 25
+Residuo: 1
+
+
+
+
+
+CARLOS MIGUEL OSORIO GUTIERREZ12:11
+PROBLEMA 1 - Datos de Prueba
+===================================================
+
+Datos de entrada
+-------------------------------------
+Número 1: 400
+Número 2: 200
+
+Reporte
+-------------------------------------
+Suma: 600
+Resta: 200
+Producto: 80000
+División: 2
+Residuo: 0
+
+
+YARITZA XIOMARA RAMÓN FERNANDEZ12:13
+PROBLEMA 1 - Datos de Prueba
+===================================================
+
+Datos de entrada
+-------------------------------------
+Número 1: 150
+Número 2: 50
+
+Reporte
+-------------------------------------
+Suma: 200
+Resta: 100
+Producto: 7500
+División: 3
+Residuo: 0
+
+
+ELSER GIAMPIERRE GUERRERO GARCIA12:14
+PROBLEMA 1 - Datos de Prueba
+===================================================
+
+Datos de entrada
+-------------------------------------
+Número 1: 150
+Número 2: 3
+
+Reporte
+-------------------------------------
+Suma: 153
+Resta: 147
+Producto: 450
+División: 50
+Residuo: 0
+
+
+
+
+
 
