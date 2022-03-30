@@ -1,0 +1,18 @@
+﻿PROBLEMA 1 - Datos de Prueba
+===================================================
+
+Datos de entrada
+-------------------------------------
+Número 1: 
+Número 2: 
+
+Reporte
+-------------------------------------
+Suma: 
+Resta: 
+Producto: 
+División: 
+Residuo: 
+
+
+
