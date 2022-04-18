@@ -50,18 +50,23 @@ int main(){
 		case 'A':
 			porcDescuento = 0.04;
 			porcBono = 0.08;
+			break;
 		case 'B':
 			porcDescuento = 0.08;
 			porcBono = 0.10;
+			break;
 		case 'C':
 			porcDescuento = 0.12;
 			porcBono = 0.14;
+			break;
 		case 'D':
 			porcDescuento = 0.18;
 			porcBono = 0.18;
+			break;
 		case 'E':
 			porcDescuento = 0.20;
-			porcBono = 0.25;												
+			porcBono = 0.25;
+			break;											
 	}
 	importeVenta = precioUnitario * cantidad;
 	descuento = importeVenta * porcDescuento;
