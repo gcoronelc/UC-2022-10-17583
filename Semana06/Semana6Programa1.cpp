@@ -22,7 +22,7 @@ int main()
 		do{
 			cout<<"Ingrese opcion: "; cin>>op;		
 			if(op<1 || op>3){
-				cout << "ERROR, debe 1, 2 o 3. Vuelve a Ingresar." << endl;
+				cout << "ERROR, debe ser 1, 2 o 3. Vuelve a Ingresar." << endl;
 			}
 		}while(op<1 || op>3);  // Es para Validar el ingreso de op
 				
