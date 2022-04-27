@@ -8,6 +8,8 @@ int main(){
 	
 	// Variables
 	int opMenu;
+	double ventas, meta, porcComision, porcDescuento;
+	double comision, bono, pagoTotal;
 	
 	// Control del menú de opciones
 	do{
@@ -38,30 +40,50 @@ int main(){
 			return 0;
 		}
 		
-		// Procesar opción del menú
+		
+		// Lectura de datos
 		system("cls");
+		cout << "Lectura de Datos" << endl;
+		cout << "=========================================" << endl;
+		cout << "Ventas: "; cin >> ventas;
+		
+		// Proceso
 		switch(opMenu){
-			// Opción 1: aaaa
 			case 1:
-				cout << "Proceso opción 1" << endl;
+				meta = 80000.00;
+				porcComision = 0.10;
+				porcDescuento = 0.03;
 				break;
-			// Opción 2: bbbbb
 			case 2:
-				cout << "Proceso opción 2" << endl;
+				meta = 80000.00;
+				porcComision = 0.10;
+				porcDescuento = 0.03;
 				break;	
-			// Opción 3: cccccccc
 			case 3:
-				cout << "Proceso opción 3" << endl;
+				meta = 80000.00;
+				porcComision = 0.10;
+				porcDescuento = 0.03;
 				break;					
-			// Opción 4: dddddddd
 			case 4:
-				cout << "Proceso opción 4" << endl;
-				break;
-			// Opción 5: Salir
-			case 5:
-				cout << "Fin del programa." << endl;
+				meta = 100000.00;
+				porcComision = 0.16;
+				porcDescuento = 0.08;
 				break;
 		}
+		comision = (ventas>meta?meta:ventas) * porcComision;
+		bono = (ventas>meta?ventas-meta:0)*porcDescuento;
+		pagoTotal = comision +bono;
+		
+		// Reporte
+		cout << endl;
+		cout << "REPORTE"<< endl;
+		cout << "=================================" << endl;
+		cout << "Comisión: " << comision << endl;
+		cout << "Bono: " <<  bono << endl;
+		cout << "Importe a pagar: " << pagoTotal << endl;
+		cout << endl;
+		
+		
 		
 		system("pause");
 	} while(opMenu!=5);
