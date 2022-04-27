@@ -14,11 +14,11 @@ int main()
 		cout<<"2. Salir"<<"\n";
 		
 		do{
-			cout<<"Ingrese opcion:\t\t";
+			cout<<"Ingrese opcion:\t";
 			cin>>op;
 			
 			if(op<1 || op>2)
-				cout<<"\n"ERROR, debe 1 o 2. Vuelve a Ingresar."<<"\n\n";
+				cout<<"\nERROR, debe 1 o 2. Vuelve a Ingresar."<<"\n\n";
 
 		}while(op<1 || op>2);  // Es para Validar el ingreso de op
 				
@@ -31,11 +31,11 @@ int main()
 								cout<<"2. Volver."<<"\n";
 							
 								do{
-									cout<<"Ingrese opcion:\t\t";
+									cout<<"Ingrese opcion:\t";
 									cin>>opc;
 									
 									if(opc<1 || opc>2)
-										cout<<"\n"ERROR, debe 1 o 2. Vuelve a Ingresar."<<"\n\n";
+										cout<<"\nERROR, debe 1 o 2. Vuelve a Ingresar."<<"\n\n";
 						
 								}while(opc<1 || opc>2);  // Es para Validar el ingreso de opc
 								
