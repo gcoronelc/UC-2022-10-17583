@@ -8,6 +8,7 @@ int main()
 	
 	// Variables
 	int opMenu;
+	double ladoCuadrado, areaCuadrado;
 	
 	// Control del menú
 	do{
@@ -33,9 +34,38 @@ int main()
 		} while(opMenu<1 || opMenu>4);
 		
 		
-		// Reporte previo.
-		cout << endl;
-		cout << "Opción: " << opMenu << endl;
+		// Programación del menú
+		system("cls");
+		switch(opMenu){
+			case 1:
+				// Lectura de datos
+				cout << "Lectura de datos" << endl;
+				cout << "----------------------------------" << endl;
+				cout << "Valor del lado: "; cin >> ladoCuadrado;
+				// Proceso
+				areaCuadrado = ladoCuadrado * ladoCuadrado;
+				// Reporte
+				cout << endl;
+				cout << "Reporte" << endl;
+				cout << "----------------------------------" << endl;
+				cout << "Valor del lado: " << ladoCuadrado << endl;
+				cout << "Valor del area: " << areaCuadrado << endl;
+				cout << endl;
+				break;
+			case 2:
+				cout << "Falta" << endl;
+				cout << endl;
+				break;
+			case 3:
+				cout << "Falta" << endl;
+				cout << endl;
+				break;
+			case 4:
+				cout << endl;
+				cout << "Fin del programa." << endl;
+				cout << endl;
+				break;								
+		}
 		
 		
 		system("pause");
