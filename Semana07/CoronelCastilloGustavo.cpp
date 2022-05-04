@@ -9,7 +9,10 @@ int main(){
 	setlocale(LC_CTYPE,"Spanish");
 	
 	// Variables
-	int opMenu;
+	int opMenu, contVentas;
+	
+	// Inicializa variables
+	contVentas = 0;
 	
 	// Control del menú de opciones
 	do{
@@ -35,9 +38,10 @@ int main(){
 		// Procesar opción del menú
 		system("cls");
 		switch(opMenu){
-			// Opción 1: aaaa
 			case 1:
-				cout << "Proceso opción 1" << endl;
+				contVentas++;
+				cout << "SOBRE RUEDAS SAC" << endl;
+				cout << "Venta Nro. " << contVentas << endl;
 				break;
 			// Opción 2: bbbbb
 			case 2:
