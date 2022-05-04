@@ -9,7 +9,8 @@ int main(){
 	setlocale(LC_CTYPE,"Spanish");
 	
 	// Variables
-	int opMenu, contVentas;
+	int opMenu, contVentas, cantidad;
+	char categoria;
 	
 	// Inicializa variables
 	contVentas = 0;
@@ -39,24 +40,40 @@ int main(){
 		system("cls");
 		switch(opMenu){
 			case 1:
+				// CONTADOR DE VENTAS
 				contVentas++;
+				// LECTURA DE DATOS
 				cout << "SOBRE RUEDAS SAC" << endl;
 				cout << "Venta Nro. " << contVentas << endl;
+				cout << "LECTURA DE DATOS" << endl;
+				cout << "=====================================" << endl;
+				// Leer la categoría
+				do{
+					cout << "Categoría (A/B/C): "; cin >> categoria;
+					categoria = toupper(categoria);
+					if(categoria!='A' && categoria!='B' && categoria!='C'){
+						cout << "ERROR: la categoría de ser A, B o C." << endl;
+					}
+				} while(categoria!='A' && categoria!='B' && categoria!='C');
+				// Leer la cantidad
+				do{
+					cout << "Cantidad: "; cin >> cantidad;
+					if(cantidad<=0){
+						cout << "ERROR: la cantidad es un valor positivo." << endl;
+					}
+				} while(cantidad<=0);
 				break;
-			// Opción 2: bbbbb
+
 			case 2:
 				cout << "Proceso opción 2" << endl;
 				break;	
-			// Opción 3: cccccccc
+
 			case 3:
 				cout << "Proceso opción 3" << endl;
 				break;					
-			// Opción 4: dddddddd
+
+
 			case 4:
-				cout << "Proceso opción 4" << endl;
-				break;
-			// Opción 5: Salir
-			case 5:
 				cout << "Fin del programa." << endl;
 				break;
 		}
