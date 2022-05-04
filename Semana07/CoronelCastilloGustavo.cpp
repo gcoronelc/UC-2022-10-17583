@@ -11,6 +11,8 @@ int main(){
 	// Variables
 	int opMenu, contVentas, cantidad;
 	char categoria;
+	double precio, porcComision;
+	double importeVenta, importeComision, importeTotal;
 	
 	// Inicializa variables
 	contVentas = 0;
@@ -62,6 +64,34 @@ int main(){
 						cout << "ERROR: la cantidad es un valor positivo." << endl;
 					}
 				} while(cantidad<=0);
+				// PROCESO
+				// 1.- Obtener datos de la tabla
+				switch(categoria){
+					case 'A':
+						precio = 55.0;
+						porcComision = (cantidad<=10)?4.0:6.0;
+						break;
+					case 'B':
+						precio = 75.0;
+						porcComision = (cantidad<=10)?6.0:10.0;
+						break;
+					case 'C':
+						precio = 93.0;
+						porcComision = (cantidad<=10)?10.0:15.0;
+						break;												
+				}
+				// 2.- Calculos de la venta
+				importeVenta = precio * cantidad;
+				importeComision = importeVenta * porcComision;
+				// REPORTE DE LA VENTA
+				cout << endl;
+				cout << "REPORTE DE VENTA" << contVentas << endl;
+				cout << "=====================================" << endl;	
+				cout << "Precio por camioneta: US$" << precio << endl;
+				cout << "Importe de venta: US$" << importeVenta << endl;
+				cout << "Porentaje de comisión: " << porcComision << "%" << endl;
+				cout << "Importe de comisión: US$" << importeComision << endl;
+				cout << endl;	
 				break;
 
 			case 2:
