@@ -12,10 +12,16 @@ int main(){
 	int opMenu, contVentas, cantidad;
 	char categoria;
 	double precio, porcComision;
-	double importeVenta, importeComision, importeTotal;
+	double importeVenta, importeComision;
 	
 	// Inicializa variables
 	contVentas = 0;
+	
+	// Variables del reporte
+	int catACantVentas=0, catBCantVentas=0, catCCantVentas=0;
+	int catACamionetas=0, catBCamionetas=0, catCCamionetas=0;
+	double catAImporte=0, catBImporte=0, catCImporte=0;
+	double catAComision=0, catBComision=0, catCComision=0;
 	
 	// Control del menú de opciones
 	do{
@@ -91,7 +97,20 @@ int main(){
 				cout << "Importe de venta: US$" << importeVenta << endl;
 				cout << "Porentaje de comisión: " << porcComision << "%" << endl;
 				cout << "Importe de comisión: US$" << importeComision << endl;
-				cout << endl;	
+				cout << endl;
+				// ACTUALIZAR VARIABLES DEL RESUMEN DE VENTAS
+				catACantVentas += (categoria=='A')?1:0;
+				catBCantVentas += (categoria=='B')?1:0;
+				catCCantVentas += (categoria=='C')?1:0;
+				catACamionetas += (categoria=='A')?cantidad:0;
+				catBCamionetas += (categoria=='B')?cantidad:0;
+				catCCamionetas += (categoria=='C')?cantidad:0;
+				catAImporte += (categoria=='A')?importeVenta:0;
+				catBImporte += (categoria=='B')?importeVenta:0;
+				catCImporte += (categoria=='C')?importeVenta:0;
+				catAComision += (categoria=='A')?importeComision:0;
+				catBComision += (categoria=='B')?importeComision:0;
+				catCComision += (categoria=='C')?importeComision:0;
 				break;
 
 			case 2:
@@ -99,7 +118,16 @@ int main(){
 				break;	
 
 			case 3:
-				cout << "Proceso opción 3" << endl;
+				cout << endl;
+				cout << "RESUMEN DE VENTAS" << contVentas << endl;
+				cout << "=====================================" << endl << endl;	
+				cout << "CATEGORIA\tVENTAS\tCAMIONETAS\tIMPORTE\t\tCOMISION" << endl;
+				cout << "--------------------------------------------------------------------------------------" << endl;
+				cout << "     A   \t" << catACantVentas << "\t" << catACamionetas << "\t\t" << catAImporte << "\t\t" << catAComision << endl;
+				cout << "     B   \t" << catBCantVentas << "\t" << catBCamionetas << "\t\t" << catBImporte << "\t\t" << catBComision << endl;
+				cout << "     C   \t" << catCCantVentas << "\t" << catCCamionetas << "\t\t" << catCImporte << "\t\t" << catCComision << endl;
+				cout << "--------------------------------------------------------------------------------------" << endl;
+				cout << endl;
 				break;					
 
 
