@@ -1,0 +1,7 @@
+int calculaArea(int base, int altura){ 
+  int area;
+  area = base * altura;
+  return area;
+}
+
+int area = calculaArea( 56, 34 );
