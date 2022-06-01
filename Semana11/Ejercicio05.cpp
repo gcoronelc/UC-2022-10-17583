@@ -42,6 +42,18 @@ int main(){
 }
 
 // Implementación del menú
+
+int LeerEntero(string etiqueta, int valorMinimo){
+	int valor;
+	do{
+		cout << etiqueta; cin  >> valor;		
+		if(valor<valorMinimo){
+			cout << "ERROR: el valor esta fuera de rango." << endl;
+		}
+	}while(valor<valorMinimo);
+	return valor;
+}
+
 void mostrarMenu(){
 	system("cls");
 	cout << "\tMENU DE OPCIONES" << endl;
@@ -64,6 +76,21 @@ int leerOpcion(int opMin, int opMax){
 }
 
 void procesarVenta(){
+	// Vriables
+	int paquete, cantidad;
+	// Lectura
+	cout << "PAQUETE TURISTICO" << endl;
+	cout << "================================" << endl;
+	cout << "1.- Punta cana" << endl;
+	cout << "2.- San Adres" << endl;
+	cout << "3.- Cancun" << endl;
+	cout << "----------------------" << endl;
+	paquete = leerOpcion(1,3);
+	cantidad = LeerEntero("Cantidad: ",1);
+	// Proceso
+	
+	
+	// Reporte
 	
 }
 void reporteVentas(){
