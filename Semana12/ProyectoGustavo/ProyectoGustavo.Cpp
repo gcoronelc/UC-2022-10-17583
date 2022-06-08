@@ -4,8 +4,9 @@ using namespace std;
 
 // Funciones y Procedimientos
 void mostrarMenu();
-
-
+void procesarVenta();
+void reporteEstadistico();
+void finPrograma();
 
 int main(){
 	
@@ -16,12 +17,26 @@ int main(){
 	
 	// Proceso Principal
 	do{
+		// Menú
 		mostrarMenu();
 		opMenu = leerOpcion(1,3);
+		// Procesar el menú
+		system("cls");
+		switch(opMenu){
+			case 1:
+				procesarVenta();
+				break;
+			case 2:
+				reporteEstadistico();
+				break;
+			case 3:
+				finPrograma();
+				break;
+		}
 		
-		cout << "Opción = " << opMenu << endl << endl;
-		
-		system("pause");
+		if(opMenu!=3){
+			system("pause");
+		}
 	} while(opMenu!=3);
 	
 	
@@ -40,3 +55,20 @@ void mostrarMenu(){
 	cout << "================================" << endl;
 	cout << endl;
 }
+
+void procesarVenta(){
+	cout << "Falta ..." << endl;
+}
+
+void reporteEstadistico(){
+	cout << "Falta ..." << endl;	
+}
+
+void finPrograma(){
+	cout << endl;
+	cout << "FIN DEL PROGRAMA" << endl;
+	cout << "Esperamos su pronta visita." << endl;
+	cout << "Que tenga un excelente día." << endl;
+	cout << endl;
+}
+
