@@ -7,6 +7,7 @@ void mostrarMenu();
 void procesarVenta();
 void reporteEstadistico();
 void finPrograma();
+char leerTipoProducto();
 
 int main(){
 	
@@ -57,7 +58,38 @@ void mostrarMenu(){
 }
 
 void procesarVenta(){
-	cout << "Falta ..." << endl;
+	// Variables
+	char sexo, tipo;
+	double precio, porcDescuento;
+	double montoBruto, descuento, montoNeto;
+	int cantidad;
+	// Lectura
+	cout << endl;
+	cout << "LECTURA DE DATOS" << endl;
+	cout << "========================================" << endl;
+	sexo = leerSexo("Ingrese sexo del cliente: ");
+	tipo = leerTipoProducto();
+	precio = leerDouble("Ingrese precio:", 1);
+	cantidad = leerEntero("Ingrese cantidad:", 2);
+	// Proceso
+	// Paso 1: DEterminar el porcentaje de descuento
+	porcDescuento = 0.0;
+	porcDescuento = (tipo=='A')?8:porcDescuento;
+	porcDescuento = (tipo=='B')?10:porcDescuento;
+	porcDescuento = (tipo=='C')?12:porcDescuento;
+	porcDescuento = (tipo=='D')?15:porcDescuento;
+	// Paso 2: Calculo de la venta
+	montoBruto = precio * cantidad;
+	descuento = montoBruto * porcDescuento / 1000;
+	montoNeto = montoBruto - descuento;
+	// Reporte de venta
+	cout << endl;
+	cout << "REPORTE DE VENTA" << endl;
+	cout << "---------------------------------------------------" << endl;
+	cout << "Monto Bruto: " << montoBruto << endl;
+	cout << "Descuento: " << descuento << endl;
+	cout << "Monto neto: " << montoNeto << endl;
+	cout << endl;
 }
 
 void reporteEstadistico(){
@@ -72,3 +104,21 @@ void finPrograma(){
 	cout << endl;
 }
 
+char leerTipoProducto(){
+	char tipo;
+	cout << "Tipo de Producto" << endl;
+	cout << "-------------------------------" << endl;
+	cout << "A. Mouse" << endl;
+	cout << "B. Teclado" << endl;
+	cout << "C. Disco Duro" << endl;
+	cout << "D. Monitor" << endl;
+	cout << "-------------------------------" << endl;
+	do{
+ 		cout << "Opción: "; cin >> tipo;
+ 		tipo = toupper(tipo);
+ 		if(tipo!='A' && tipo!='B' && tipo!='C' && tipo!='D'){
+ 			cout << "Error, tipo incorrecto." << endl;
+		 }
+	}while(tipo!='A' && tipo!='B' && tipo!='C' && tipo!='D');	
+	return tipo;
+}
