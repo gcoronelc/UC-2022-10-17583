@@ -14,7 +14,6 @@ void reporteVentas();
 void salir();
 
 int main(){
-	
 	// Configuracion
 	setlocale(LC_CTYPE,"Spanish");
 	// Variables
@@ -39,7 +38,6 @@ int main(){
 		}		// Fin
 		system("pause");
 	} while(opMenu!=3);
-	
 	// Fin
 	return 0;
 }
@@ -130,6 +128,7 @@ void procesarVenta(){
 	cout << "Total: " << total << endl;
 	cout << endl;
 }
+
 void reporteVentas(){
 	cout << endl;
 	cout << "REPORTE" << endl;
