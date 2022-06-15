@@ -1,6 +1,6 @@
 #include <iostream>
 #include "utilitario.h"
-#include "ToolBox.h"
+//#include "ToolBox.h"
 using namespace std;
 
 int main(){
@@ -21,10 +21,10 @@ int main(){
 				procesarVentas();
 				break;
 			case 2:
-				reporteEstadistico();
+				//reporteEstadistico();
 				break;
 			case 3:
-				procesoSalir();
+				//procesoSalir();
 				break;
 		}
 		// Pausa
