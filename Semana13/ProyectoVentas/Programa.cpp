@@ -14,8 +14,19 @@ int main(){
 		// Menu
 		mostrarMenu();
 		opMenu = leerOpcion(1,3);
-		
-		
+		// Proceso del menú
+		system("cls");
+		switch(opMenu){
+			case 1:
+				procesarVentas();
+				break;
+			case 2:
+				reporteEstadistico();
+				break;
+			case 3:
+				procesoSalir();
+				break;
+		}
 		// Pausa
 		if(opMenu!=3){
 			system("pause");
