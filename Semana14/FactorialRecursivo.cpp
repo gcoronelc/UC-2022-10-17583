@@ -16,16 +16,31 @@ int main(){
 	
 	// Variables
 	int n, fact;
+	string ns;
 	
 	// Lectura de datos
-	cout << "Ingresa el valor para \"n\": ";
-	cin  >> n;
+	do{
+		n = -1;
+		cout << "Ingresa el valor para \"n\": ";
+		cin  >> ns;
+		if(isalpha(ns[0])){
+			cout << "ERROR, debe ingresar un número." << endl;
+			continue;
+		}
+		n = stoi(ns);
+		if(n<0){
+			cout << "ERROR, debe ingresar un número positivo." << endl;
+		}
+	}while(n<0);
+	
 	
 	// Proceso
 	fact = factorial(n);
 	
 	// Reporte
 	cout << endl;
+	cout << "Valor de ns: " << ns << endl;
+	cout << "Valor de n: " << n << endl;
 	cout << "Factorial: " << fact << endl;
 	cout << endl;
 	
