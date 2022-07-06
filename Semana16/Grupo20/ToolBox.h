@@ -5,8 +5,15 @@ using namespace std;
 // Leer opción
 int leerOpcion(int opMin, int opMax){
 	int op;
+	string cadIngreso;
 	do{
-		cout << "Opción: "; cin >> op;
+		cout << "Opción: "; cin >> cadIngreso;
+		if (isalpha(cadIngreso[0])){
+			cout << "Error, debe ingresar un número." << endl;
+			op = opMin - 1;
+			continue;
+		}
+		op = atoi(cadIngreso.c_str());
 		if(op<opMin || op>opMax){
 			cout << "Error, opción fuera de rango." << endl;
 		}
