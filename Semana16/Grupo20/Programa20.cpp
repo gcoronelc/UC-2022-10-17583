@@ -25,11 +25,12 @@ int main(){
 				FinDelPrograma();
 				break;
 		}
-		
-		system("pause");
+		// Pausa
+		if(op!=3){
+			system("pause");
+		}
 	} while(op!=3);
 		
 	// Fin
-	system("pause");
 	return 0;
 }
