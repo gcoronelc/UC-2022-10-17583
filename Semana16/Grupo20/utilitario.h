@@ -29,9 +29,10 @@ void MostrarMenuProducto(){
 }
 void ProcesarVenta(){
 	// Variables locales
-	int tipoProducto;
+	int tipoProducto, cantidad, edad;
 	string descripcion;
 	double precio;
+	char sexo;
 	// Cabecera
 	cout << "   EL PESCADOR" << endl;
 	cout << "   Procesar venta" << endl;
@@ -43,6 +44,9 @@ void ProcesarVenta(){
 	tipoProducto = leerOpcion(1,4);
 	cout << "Decripción: "; cin >> descripcion;
 	precio = leerDouble("Precio: ",1.0);
+	cantidad = leerEntero("Cantidad: ", 1);
+	sexo = leerSexo("Sexo (M/F): ");
+	edad = leerEntero("Edad [1,120]: ", 1, 120);
 }
 
 void ReporteVentas(){

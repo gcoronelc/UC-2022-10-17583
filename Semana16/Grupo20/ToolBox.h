@@ -36,6 +36,27 @@ int leerEntero(string etiqueta, int valorMinimo){
 	return valor;
 }
 
+/*
+ * Lee un valor entero.
+*/
+int leerEntero(string etiqueta, int valorMinimo, int valorMaximo){
+	int valor;
+	string cadIngreso;
+	do{
+		cout << etiqueta; cin >> cadIngreso;
+		if (isalpha(cadIngreso[0])){
+			cout << "Error, debe ingresar un número." << endl;
+			valor = valorMinimo - 1;
+			continue;
+		}
+		valor = atoi(cadIngreso.c_str());		
+		if(valor<valorMinimo || valor>valorMaximo){
+			cout << "ERROR: el valor esta fuera de rango." << endl;
+		}
+	}while(valor<valorMinimo || valor>valorMaximo);
+	return valor;
+}
+
 
 /*
  * Lee un valor entero.
